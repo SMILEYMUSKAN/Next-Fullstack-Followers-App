@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img-ui {
+  width: 90px;
+  height: 90px;
+}
+
+.user-card-ui {
+  width: 100%;
+}
+
+.btn-ui {
+  width: 6rem;
+  height: 3rem;
+}
+
+.btn-ui:hover {
+  background: linear-gradient(#833ab4, #fd1d47);
+  color: white;
+  transition: all 0.5s;
+}
+
+.users-ui {
+  background: linear-gradient(#833ab4, #fd1d47);
+}
+
+.main-ui {
+  flex: 80%;
+}
+
+.side-menu-ui {
+  flex: 20%;
+  background: linear-gradient(#833ab4, #fd1d47);
+}
+
+.home-content-ui {
+  background-color: white;
+}
+
+.header-border-ui {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(#7213b1, #c00a7a);
+  border-image-slice: 1;
+}

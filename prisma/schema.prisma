@@ -1,0 +1,20 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+   id         Int      @id @default(autoincrement())
+   email      String  @unique
+   username   String  @default("No Name")
+   password   String  @default("No Password")
+   profile    String  @default("https://cdn.create.vista.com/api/media/small/475532434/stock-vector-people-icon-person-icon-user-icon-vector-illustration-graphic-design")
+   
+}
